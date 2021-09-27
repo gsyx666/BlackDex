@@ -2,7 +2,7 @@ version: "1"
 
 rules:                      # Array of rules
 
-  - base: master            # Required. Target branch
+  - base: main            # Required. Target branch
 
     upstream: CodingGay:BlackDex    # Required. Must be in the same fork network.
 
@@ -10,21 +10,21 @@ rules:                      # Array of rules
 
     mergeUnstable: false    # Optional, merge pull request even when the mergeable_state is not clean. Default: false
 
-  - base: dev
+  - base: pull
 
-    upstream: master        # Required. Can be a branch in the same forked repo.
+    upstream: main        # Required. Can be a branch in the same forked repo.
 
     assignees:              # Optional
 
-      - wei
+      - CodingGay
 
     reviewers:              # Optional
 
-      - wei
+      - CodingGay
 
     conflictReviewers:      # Optional, on merge conflict assign a reviewer
 
-      - wei
+      - CodingGay
 
 label: ":arrow_heading_down: pull"  # Optional
 
